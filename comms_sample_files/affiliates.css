@@ -1,0 +1,232 @@
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+*/
+#affiliates-info {
+  font-size: 100%;
+  line-height: 1;
+}
+
+.affiliate-header{
+	
+}
+
+	.affiliate-header h5{
+		font-weight:normal;
+		color:#9f9f9f;
+		font-size:14px;
+		padding:0 8px;
+	}
+
+	.affiliate-header h2{
+		font-weight:bold;
+		font-size:24px;
+		color:#35a3da;
+		border-bottom:1px solid #ddd;
+		padding:4px 8px 6px 8px;
+	}
+
+	.affiliate-header p{
+		padding:8px;
+		font-size:12px;
+		line-height:1.2;
+	}
+
+.affiliate-summary{
+	overflow:hidden;
+	margin:20px 0;
+	font-weight: bold;
+}
+
+	.affiliate-summary-item{
+		float:left;
+		background:url('../images/affiliates/spacer.png') no-repeat -6px 4px;
+		width:174px;
+	}
+	
+	.affiliate-summary-item:first-child{
+		background:none;
+	}
+
+		.affiliate-summary-item .blue-icon{
+			width:92px;
+			margin:auto;
+			display:block;
+		}
+
+		.affiliate-summary-item h3{
+			text-align:center;
+			color:#0e4f70;
+			font-size:24px;
+		}
+
+		.affiliate-summary-item h4{
+			text-align:center;
+			color:#35a3da;
+			font-size:20px;
+			text-transform:uppercase;
+			padding:8px 0 0 0;
+		}
+
+#affiliate-funnel-events ul {
+  list-style: none;	
+}
+
+#affiliate-funnel-events ul,ol {
+  padding-bottom: 25px;
+}
+  
+.affiliate-summary-list{
+}		
+
+  .affiliate-summary-list-header{
+		background:url('../images/affiliates/blue-bg.png') repeat-x;
+		overflow:auto;
+	}
+			
+	.affiliate-summary-list-subheader{
+    background-color: #DDD;
+		overflow:auto;
+	}		
+		
+	.affiliate-summary-list-odd{
+		background:#fff;
+		border-bottom:1px solid #DDD;
+		overflow:auto;
+	}
+	
+		
+	.affiliate-summary-list-even{
+		background:#ecf8ff;
+		border-bottom:1px solid #DDD;
+		overflow:auto;
+	}	
+	
+	.affiliate-summary-list-odd .affiliate-summary-list-title,
+	.affiliate-summary-list-even .affiliate-summary-list-title{
+		width:355px;
+		float:left;
+		font-size: 14px;
+		padding:12px 20px 12px 25px;
+		color:#363636;
+	}
+	
+	.affiliate-summary-list-odd .affiliate-summary-list-extra,
+	.affiliate-summary-list-even .affiliate-summary-list-extra{
+		width:80px;
+		float:left;
+		font-size: 14px;
+		text-align:center;
+		padding:12px 10px;
+		color:#363636;
+	}
+		
+	.affiliate-summary-list-header-title{
+	  font-size: 18px;
+		width:420px;
+		float:left;
+		padding:12px 20px;
+		color:#89d2ff;
+	}		
+		
+	.affiliate-summary-list-subheader-title{
+	  font-size: 16px;
+		width:360px;
+		float:left;
+		padding:12px 20px;
+		color:#363636;
+	}		
+
+	.affiliate-summary-list-subheader-extra{
+/*    border: 1px dotted red;*/
+		width:80px;
+		float:left;
+	  font-size: 16px;
+		text-align:center;
+		color:#363636;
+		padding:12px 10px;
+	}
+
+ul.affiliate_links {
+	list-style-type: none;
+}
+
+ul.affiliate_links ul {
+	margin-left: 25px;
+}
+
+ul.affiliate_links li {
+	list-style-type: disc;
+}
+
+ul.affiliate_links li.affiliate_link {
+	border-bottom: 1px solid #e3e3e3;
+	list-style-type: none;
+	padding: 15px 0 15px 0;
+}
+
+#affiliate_reporting_date_selects {
+  margin-bottom: 10px;
+	border: 1px solid #C3EAFE;
+	width: 700px;
+	margin: auto;
+	padding: 15px;
+}
+
+#affiliate_reporting_date_selects div {
+  margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.view_all_orders {
+	background: url('../images/lg_famfamfam/32x32/group.png') #D0FED1 no-repeat 14px center;
+	border: 1px solid #4BB93D;
+	padding: 15px;
+	text-align: center;
+	width: 320px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.view_all_orders div {
+	padding-left: 25px;
+}
+
+.export_orders {
+	background: url('../images/lg_famfamfam/32x32/table_save.png') #CEEFFE no-repeat 14px center;
+	border: 1px solid #1B87BB;
+	padding: 15px;
+	text-align: center;
+	width: 250px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.export_orders div {
+	padding-left: 25px;
+}
+
+.back_to_reporting {
+	text-align: right;
+	font-size: 16px;
+	position: relative;
+	top: -40px;
+}
