@@ -1,0 +1,563 @@
+/**************************************************************/
+/**************************************************************/
+/*  Based off of HTML5 ✰ Boilerplate  */
+/* ZERO EVERYTHING OUT */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* DEFINE BLOCK ELEMENTS */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* GENERAL ELEMENT DEFAULTS */
+blockquote, q {
+  quotes: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+ul, ol {
+  /*margin-left: 2em;*/
+  list-style: none;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong, th {
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* FORM DEFAULTS */
+textarea {
+  overflow: auto;
+}
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* TEXT HIGHLIGHTING */
+::-moz-selection {
+  background: #dddddd;
+  /*color:#fff;*/
+  /*text-shadow:0 1px 1px rgba(0,0,0,0.5);*/
+}
+
+::selection {
+  background: #dddddd;
+  /*color:#fff;*/
+  /*text-shadow:0 1px 1px rgba(0,0,0,0.5);*/
+}
+
+a:link {
+  -webkit-tap-highlight-color: #dddddd;
+}
+
+/* MISC */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/*for FireFox*/
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner {
+  border: 0px;
+}
+
+/*for IE8 */
+input[type="submit"]:focus, input[type="button"]:focus {
+  outline: none;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* UTILITY CLASSES */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  text-align: center;
+  margin: 0 auto;
+  /* attempts to center both inline/block elements */
+}
+
+.no-hand {
+  cursor: default;
+}
+
+/* Convenience classes */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+.tac {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  font-size: 5px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.small {
+  font-size: .917em;
+}
+
+.xsmall {
+  font-size: .80em;
+}
+
+.xxsmall {
+  font-size: .60em;
+}
+
+.normal {
+  font-size: 12px !important;
+}
+
+.big {
+  font-size: 1.167em;
+}
+
+.bigger {
+  font-size: 1.333em;
+}
+
+.black {
+  color: #000;
+}
+
+.green1, .green1:hover {
+  color: #7ba709;
+}
+
+.green2, .green2:hover {
+  color: #6f9904;
+}
+
+.blue {
+  color: #418dcb;
+}
+
+.green {
+  color: #349c5b;
+}
+
+.yellow {
+  color: #fdff56;
+}
+
+.comment {
+  color: #418dcb;
+}
+
+.other {
+  color: #418dcb;
+}
+
+.suggestion {
+  color: #349c5b;
+}
+
+.question {
+  color: #ee9406;
+}
+
+.darkgray {
+  color: #333;
+}
+
+.mediumgray {
+  color: #5F5F5F;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.em {
+  font-style: italic;
+}
+
+.absolute-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inline-block {
+  display: inline-block;
+  display: -moz-inline-box;
+}
+
+.white {
+  color: #fff;
+}
+
+.red {
+  color: #f00;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.spacer {
+  padding: 0 5px;
+}
+
+.vertical-middle * {
+  vertical-align: middle;
+}
+
+.no-bull li {
+  list-style: none;
+}
+
+.no-ul, .reverse {
+  text-decoration: none;
+}
+
+.no-ul:hover, .reverse:hover {
+  text-decoration: underline !important;
+}
+
+.no-underline, .no-underline:hover {
+  text-decoration: none;
+}
+
+.force_block {
+  display: block;
+}
+
+em {
+  font-style: italic;
+}
+
+/* LOCAL @FONT-FACE DEC'S
+**********************************/
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot");
+  src: url("/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix") format("eot"), url("/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff") format("woff"), url("/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf") format("truetype"), url("/fonts/proximanova_regular/ProximaNova-Reg-webfont.svg#webfonttLdMzI8n") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("/fonts/proximanova_bold/ProximaNova-Bold-webfont.eot");
+  src: url("/fonts/proximanova_bold/ProximaNova-Bold-webfont.eot?iefix") format("eot"), url("/fonts/proximanova_bold/ProximaNova-Bold-webfont.woff") format("woff"), url("/fonts/proximanova_bold/ProximaNova-Bold-webfont.ttf") format("truetype"), url("/fonts/proximanova_bold/ProximaNova-Bold-webfont.svg#webfontgrewrCss") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaRegularItalic';
+  src: url("/fonts/proximanova_italic/ProximaNova-RegIt-webfont.eot");
+  src: url("/fonts/proximanova_italic/ProximaNova-RegIt-webfont.eot?iefix") format("eot"), url("/fonts/proximanova_italic/ProximaNova-RegIt-webfont.woff") format("woff"), url("/fonts/proximanova_italic/ProximaNova-RegIt-webfont.ttf") format("truetype"), url("/fonts/proximanova_italic/ProximaNova-RegIt-webfont.svg#webfontjQHW7Ll4") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
