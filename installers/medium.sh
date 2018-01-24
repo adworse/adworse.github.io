@@ -5,7 +5,8 @@ echo 'Installing Ruby libraries manager'
 gem install bundler
 
 echo 'Getting script source'
-wget adworse.github.io/installers/medium.tar.gz
+rm medium.tar.gz
+wget https://github.com/adworse/adworse.github.io/blob/master/installers/medium.tar.gz
 
 tar -xvzf medium.tar.gz && rm medium.tar.gz
 
