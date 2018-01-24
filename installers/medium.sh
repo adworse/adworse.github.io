@@ -6,8 +6,8 @@ gem install bundler
 
 echo 'Getting script source'
 rm medium.tar.gz*
-wget https://github.com/adworse/adworse.github.io/blob/master/installers/medium.tar.gz
-
+wget https://github.com/adworse/adworse.github.io/raw/master/installers/medium.tar.gz
+     
 tar -xvzf medium.tar.gz && rm medium.tar.gz
 
 echo 'Installing Ruby gems for script to run'
